@@ -1,0 +1,202 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage{./moderncv}
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Wainer}{Dos Santos Moschetta}
+\title{Software Engineer}                               % optional, remove / comment the line if not wanted
+\address{Mario C. Urbinatti 396 Ap 402}{87080-120 Maringa}{Brazil}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+55~(44)~99133~3573}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\phone[fixed]{+55~(44)~3305~3602}
+%\phone[fax]{+3~(456)~789~012}
+\email{wainersm@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{wainer-moschetta}                        % optional, remove / comment the line if not wanted
+%\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{wainersm}                              % optional, remove / comment the line if not wanted
+%\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+\social[skype]{wainersm}                               % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{../headshot}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Over 10 years of experience in software engineering on Linux environment, working in globally distributed teams, solid open source contributor, and experienced technical leader.}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+%\section{Education}
+%\cventry{2002--2007}{B.S.}{University of Sao Paulo}{Brazil}{}{Computer Science}  % arguments 3 to 6 can be left empty
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+%  \newline{}Technologies: C, Assembly, GCC, GDB, Binutils, Make, Autotools, Shell Script, TCL, Python.
+\section{Experience}
+\subsection{Professional}
+\cventry{2007--2017}{Staff Software Engineer}{IBM}{Brazil}{}{Software engineer at Linux Technology Center
+\begin{itemize}
+\item (2016-2017) Advance Toolchain and Core libraries for Linux on POWER
+  \newline{}Toolchain engineer.
+  \begin{itemize}
+  \item Deliver optimized functions on open source libraries for PowerPC
+  \item Enable features and fixes for PowerPC on core libraries
+  \item Improve, test, package, and release of Advance Toolchain
+  \end{itemize}
+  Technologies: C, Assembly, GCC, GDB, Binutils, Make, Autotools, POWER8, Shell Script, TCL, and Python.
+\item (2011-2016) IBM SDK for Linux on POWER
+  \newline{}\small Project leader, scrum master and Java developer.
+  \begin{itemize}
+  \item Develop an IDE that integrates C/C++ development and performance tools
+  \item Encompassed end-to-end product development: concept, features design, coding, QA, release, legal, and documentation
+  \item Engaged with Eclipse open source community
+  \end{itemize}
+  \newline{}Technologies: Java, Shell Script, C, Eclipse API, JUnit, SWTBot, Shell script, Gerrit, Jenkins, SonarQube, Git, Scrum, Oprofile, Perf, Valgrind, Autotools, SystemTap, and Docker.
+\item (2009-2010) reScript
+  \newline{}Project leader, scrum master, and web developer.
+  \newline{}Aimed to develop tools for migration of shell script code from Unix operating systems (Solaris/AIX/HP-UX) to Linux.
+  \begin{itemize}
+  \item Full stack development using Ruby on Rails
+  \end{itemize}
+  \newline{}Technologies: Ruby on Rails, HTML, JavaScript, CSS, Shell script, MySQL, and Git.
+%\clearpage
+% DDCVS
+\item (2007-2008) Device Driver Compilation and Validation Services
+  \newline{}Test and validate Linux device drivers in IBM systems.
+  \begin{itemize}
+  \item Test and validation of Linux device drivers
+  \item Testing automation
+  \item Screening pre/post-GA defects of Linux distribution (RedHat / Suse) releases
+  \end{itemize}
+Technologies: Linux device drivers, Shell script, Python, Perl, and Bugzilla.
+\end{itemize}}
+% CPqD
+\cventry{2006--2006}{Intern}{CPqD}{Brazil}{}{
+\begin{itemize}
+\item CPqD Billing for Telecom and Energy
+\newline{}Build leader
+Development of a large billing system over J2EE plataform addressing bussiness needs in telecommunication and energy sectors.
+  \begin{itemize}%
+  \item Integration of Java EE application modules using Apache Maven and Ant
+  \item Deployment of builds in test environment as its maintenance and configuration
+  \item Software configuration management supported by Rational Clearcase tool
+  \item Automation and standardization of software integration processes
+  \item Development of a platform to integrated nightly builds using unix Shell Scripting and Perl
+  \end{itemize}
+  \newline{}
+  Technologies: Java EE, maven, Ant, Shell Script, Perl, Rational Clearcase, RUP.
+\end{itemize}}
+\subsection{International residencies}
+\cventry{2012, 2014, and 2015}{Redbook resident}{IBM}{Poughkeepsie, New York}{}{
+Resident for one month in Poughkeepsie, NY, U.S in years of 2012, 2014, and 2015. All residencies had focus on High Performance Computing (HPC) software and hardware stack for IBM offerings.
+\newline{}Technologies: MPI, CUDA, GPU, XL Compiler, GCC, IBM Parallel Environment, POWER8, Infiniband, IBM LSF, IBM GPFS, and RHEL.
+}
+\section{Education}
+\cventry{2002--2007}{B.S.}{University of Sao Paulo}{Brazil}{}{Computer Science}  % arguments 3 to 6 can be left empty
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+\section{Languages}
+\cvitemwithcomment{English}{Fluent}{Daily used in my work environment.}
+\cvitemwithcomment{Portuguese}{Fluent}{Native speaker.}
+
+%\section{Computer skills}
+%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+\section{Open source contribution}
+\cvitem{GNU Library C (GLIBC)}{Contributed test cases, reviews, plumbings, and architecture-specific features.}
+\cvitem{Eclipse}{Contributed bug fixes and features to Linux Tools, CDT, and PTP.}
+\cvitem{Buildbot}{Contributed bug fixes and improvements.}
+\cvitem{Linux man-pages}{Contributed manuals and fixes.}
+
+%\section{Extra 1}
+%\cvlistitem[foo]{Item 1}
+%\cvlistitem[bar]{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+\section{Publications}
+\subsection{IBM Redbooks}
+\cvline{\small 2016}{\small Implementing an IBM High-Performance Computing Solution on IBM Power System S822LC.}
+\cvline{\small 2015}{\small Implementing an IBM High Performance Computing (HPC) Solution on IBM POWER8.}
+\cvline{\small 2013}{\small IBM Parallel Environment (PE) Developer Edition.}
+\subsection{IBM Redpapers}
+\cvline{\small 2015}{\small NVIDIA CUDA on IBM POWER8: Technical Overview, Software Installation, and Application.}
+\subsection{IEEE conference articles}
+\cvline{\small 2013}{\small A CPI breakdown model plug-in for optimizing application performance.}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{foo Implementing an IBM High-Performance Computing Solution on IBM Power System S822LC}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template.tex'.
